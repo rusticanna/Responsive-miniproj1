@@ -2,25 +2,34 @@
     width: 200px;
     float: left;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 .buttonList button {
     width: 100%;
     margin-bottom: 10px;
 }
 img {
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 #topImage {
     display: none;
 }
 /* note: the exercise called for a max-width of 360, but my screen resolution would not
-reach the breakpoint, so I changed it to 600px and everything worked just fine! */
+allow my browser to reach the breakpoint, so I changed it to 600px and everything worked just fine! */
 @media screen and (max-width: 600px) {
     #topImage {
+        margin-bottom: 20px;
         display: block;
     }
     .buttonList {
         float: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        margin-right: auto;
+        margin-left: auto;
+        display: block; /* note: forcing the image to be display: block allowed centering
     }
 }
